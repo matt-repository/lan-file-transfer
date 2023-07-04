@@ -106,7 +106,7 @@ func GetCurrentDirectory() string {
 		log.Fatal(err)
 	}
 	//将\替换成/
-	return strings.Replace(dir, "\\", "/", -1)
+	return strings.ReplaceAll(dir, "\\", "/")
 }
 
 // PortInOpen
